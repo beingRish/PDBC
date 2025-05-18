@@ -4,15 +4,13 @@ db_connection = get_connection()
 if db_connection:
     cur = db_connection.cursor()
     try:
-        table_name = input("Enter table name:")
-        cur.execute(f"SELECT * FROM {table_name}")
+        cur.execute("SHOW TABLES")
         rows = cur.fetchall()
         if rows:
-            print(f"Data in {table_name} table:", len(rows))
             for row in rows:
-                print(row)
+                print(row[0])
         else:
-            print("No data found in 'tutorial' table.")
+            print("No Table found")
     except Exception as e:
         print("Failed to fetch data:", e)
     cur.close()
