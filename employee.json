@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "name":"Rishabh",
+        "age":23,
+        "salary":50000.00
+    },
+    {
+        "id":2,
+        "name":"Ritik",
+        "age":23,
+        "salary":40000.00
+    },
+    {
+        "id":3,
+        "name":"Vishwjeet",
+        "age":24,
+        "salary":60000.00
+    },
+    {
+        "id":4,
+        "name":"Shashank",
+        "age":25,
+        "salary":70000.00
+    }
+]
