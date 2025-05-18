@@ -7,7 +7,7 @@ if db_connection:
         cur.execute("SELECT * FROM tutorial")
         rows = cur.fetchall()
         if rows:
-            print("Data in 'tutorial' table:")
+            print("Data in 'tutorial' table:", len(rows))
             for row in rows:
                 print(row)
         else:
