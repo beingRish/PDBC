@@ -16,4 +16,8 @@ try:
 except Exception as e:
     print("unnable to connect:", e)
 
+cur = conn.cursor()
+cur.execute("CREATE DATABASE Codeyug")
+cur.close()
+
 conn.close()
