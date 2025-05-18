@@ -17,7 +17,12 @@ except Exception as e:
     print("unnable to connect:", e)
 
 cur = conn.cursor()
-cur.execute("CREATE DATABASE Codeyug")
-cur.close()
+# cur.execute("CREATE DATABASE Codeyug")
+cur.execute("SHOW DATABASES")
+for data in cur:
+    print(data[0])
 
+
+
+cur.close()
 conn.close()
